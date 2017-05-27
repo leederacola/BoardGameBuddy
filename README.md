@@ -10,31 +10,26 @@ Final Product Discription - Basic Functions
 -	(search for Title, pull data from BGG, store in database on server) check legallity???
 
 More Features outside Collection Management/Query(Find a Game To Play)/Sorting
-
 Score Tracker
 * GUI score tracker, add player names, calculate score (we make a calculator?)
 * Less likely - Make Game specific score trackers - Visual Themes or simply more tailored caluclation method. Or modular trackers
-
 Game Play Logs
 * Who won last time we played Murder Kings? Check the game specific Play Logs.
 * Current Champion - Math out individual play counts, wins, losses, etc. to crown a reigning Champion
 * Save Player Names and Play Logs.  
-* View Player specific logs.
-* ***The Score Tracker will Upload info to Play Logs automatically***
-*Game Notes (list important notes you have for playing)
+* View Player specific logs.(wins/losses)
+* The Score Tracker will Upload info to Play Logs automatically
+Game Notes (list important notes you have for playing)
 * Contested Rules / Rule Reminders / House Rules
 * Quick Start Guide (play phases, action orders etc.
 Other Features that Could be Implemented
-* First Player Randomizer
-* Dice (for rolling) why not?
-* House Glass / Timer
+* First Player Randomizer (built into Score tracker?)
+* Dice (game use / dispute setteler) why not?
+* House Glass / Timers
 * Save RuleBook PDF to device for quick access (for other players to look at and ctrl F is great for searching rule books)
-
-
 Theres a lot of features that could be implemented that are at least related or useful when playing a board game that could be added for learning purposes.  These all might not be super useful but still be good to make them?
 	
 !!!!!!!!current state!!!!!!!!!
-
 views)
 1. welcome page with link to Library view (list titles)
 2. Library Page with links to detail views (shows game attributes)
