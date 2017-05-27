@@ -5,7 +5,7 @@ using System.Linq;
 using System.Web;
 
 
-//! BoardGameRepository currently holds both BoardGame objects and creates the array they are contained in.  
+
 
 namespace BoardGameBuddy.Data
 {
