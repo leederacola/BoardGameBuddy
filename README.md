@@ -10,6 +10,7 @@ Final Product Discription - Basic Functions
 -	(search for Title, pull data from BGG, store in database on server) check legallity???
 
 More Features outside Collection Management/Query(Find a Game To Play)/Sorting
+
 Score Tracker
 * GUI score tracker, add player names, calculate score (we make a calculator?)
 * Less likely - Make Game specific score trackers - Visual Themes or simply more tailored caluclation method. Or modular trackers
