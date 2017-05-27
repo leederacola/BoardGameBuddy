@@ -1,0 +1,28 @@
+﻿@model  BoardGameBuddy.Models.BoardGame
+    
+
+@{
+    // (above) @model imports BoardGame Model
+    ViewBag.Title = Model.Title;
+    //creates a dynamic viewBag, passes model.Title to it for use in HTML
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+    <h1>@Model.Title</h1>
+        <body>
+            <div>
+                <h3>Game Title: @Model.Title</h3>
+                <h3>Player Count: @(Model.PlayerCountMin) -  @(Model.PlayerCountMax)</h3>
+                <h3>Best With: @(Model.BestPlayerCount) Players</h3>
+                <h3>Max Play Time: @(Model.PlayTimeMax) Mins.</h3>
+                <h3>My Rating: @Model.MyRating</h3>
+                <h3> Geek Rating: @Model.GeekRating</h3>             
+            </div>
+        </body>
+</html>

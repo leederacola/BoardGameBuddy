@@ -1,7 +1,8 @@
-﻿@model BoardGameBuddy.Models.BoardGame
+﻿@model BoardGameBuddy.Models.BoardGame[]
+
 
 @{
-    Layout = null;
+    ViewBag.Title = "Game Library";
 }
 
 <!DOCTYPE html>
@@ -11,16 +12,18 @@
     <meta name="viewport" content="width=device-width" />
     <title>GameLibrary</title>
 </head>
-<h1>Game Library Here!</h1>
+<h1>Board Game Library</h1>
+
 <body>
-    <div> 
-        <ul>
-            <li>Blood Rage</li>
-            <li>Lost Cities></li>
-            <li>Dead of Winter</li>
-            <li>Pandemic</li>
-            <li>Patch Work</li>
-        </ul>
+    <div>
+        @foreach (var boardGame in Model)
+        {
+            <h3>@Html.ActionLink(boardGame.Title, "Detail",
+        new { id = boardGame.Id }) </h3>
+
+        }
+        
+   
     </div>
 </body>
 </html>
