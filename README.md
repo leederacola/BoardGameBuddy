@@ -1,13 +1,13 @@
 # BoardGameBuddy
 !!!!!!!!    Current State           !!!!!!!!!
 
------------------ views -----------------------------
+views)
 welcome page with link to Library view (list titles)
 Library Page with links to detail views (shows game attributes)
 navagation between them.
 basic ass html
 
-------------------Data/Models/Repository---------------------------
+Data/Models/Repository)
 BoardGame Model/class
 Repository that creates an array of hard coded game titles and attributes.
 
@@ -40,3 +40,5 @@ Phase 4)
     Im not even sure I know is the line above has any validity or if its just what i think is the internet workings.
     
 2. One BoardGameGeek api can be used to find titles......pull data
+
+		
