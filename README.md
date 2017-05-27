@@ -19,14 +19,17 @@ Game Play Logs
 * Save Player Names and Play Logs.  
 * View Player specific logs.(wins/losses)
 * The Score Tracker will Upload info to Play Logs automatically
+
 Game Notes (list important notes you have for playing)
 * Contested Rules / Rule Reminders / House Rules
 * Quick Start Guide (play phases, action orders etc.
+
 Other Features that Could be Implemented
 * First Player Randomizer (built into Score tracker?)
 * Dice (game use / dispute setteler) why not?
 * House Glass / Timers
 * Save RuleBook PDF to device for quick access (for other players to look at and ctrl F is great for searching rule books)
+
 Theres a lot of features that could be implemented that are at least related or useful when playing a board game that could be added for learning purposes.  These all might not be super useful but still be good to make them?
 	
 !!!!!!!!current state!!!!!!!!!
