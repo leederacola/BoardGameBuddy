@@ -4,7 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-//this BoardGameRepository will hold BoardGame data
+
+//! BoardGameRepository currently holds both BoardGame objects and creates the array they are contained in.  
 
 namespace BoardGameBuddy.Data
 {

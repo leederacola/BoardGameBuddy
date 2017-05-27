@@ -1,3 +1,22 @@
+Changes to be implemented.
+
+BoardGameRepository currently holds both BoardGame objects and creates the array they are contained in.  
+Current impplementation prevents diffrent user Libraries and Libraries that dont contain all BoardGame objects stored(hard coded).
+-Separate _boardGames[] and BoardGame objects into 2 repositories.
+-BoardGameRepository will hold all game objects (edit out array containers)
+-Make New Repository LibraryRepository - this will hold BoardGame arrayLists that can be edited by calling to BoardGameRepository
+	Functions
+	Constructor - empty arrayList of BoardGames
+	Constructor 2 (add all BoardGames from BoardGameRepository)
+		void addGame(int Id) -  Adds game to List from using BoardGame.Id (easiest way for now, no need to fuck with string searches just yet)
+		void removeGame(int Id) - removes desired BoardGame from List
+		void clearLibrary()	- removes all BoardGame objects from arrayList
+Save Library somehow?
+separate, edit, test with constructor 2 to test new method of data storage.
+Learn user input?
+ 		  
+
+
 5/27
 What I have so far......
 	***	Views-	Home, Game Libiary, Detail
