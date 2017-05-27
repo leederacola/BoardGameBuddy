@@ -1,10 +1,6 @@
 ﻿@model BoardGameBuddy.Models.BoardGame[]
 
 
-@{
-    ViewBag.Title = "Game Library";
-}
-
 <!DOCTYPE html>
 
 <html>
@@ -12,7 +8,7 @@
     <meta name="viewport" content="width=device-width" />
     <title>GameLibrary</title>
 </head>
-<h1>Board Game Library</h1>
+<h1>My Board Game Library</h1>
 
 <body>
     <div>
@@ -20,7 +16,6 @@
         {
             <h3>@Html.ActionLink(boardGame.Title, "Detail",
         new { id = boardGame.Id }) </h3>
-
         }
         
    

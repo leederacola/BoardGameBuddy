@@ -27,7 +27,7 @@ namespace BoardGameBuddy.Data
             new BoardGame()
             {
                 Id = 2,
-                Title = "Lost Citiese",
+                Title = "Lost Cities",
                 PlayerCountMin = 2,
                 PlayerCountMax = 2,
                 BestPlayerCount = 2,

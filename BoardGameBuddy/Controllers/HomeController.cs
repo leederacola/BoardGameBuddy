@@ -38,12 +38,18 @@ namespace BoardGameBuddy.Controllers
         //! returns view Home/GameLibiary
         //! Action Linker located in Index view
         {
-            return View();
+            var boardGames = _boardGameRepository.GetBoardGames();
+            return View(boardGames);
         }
 
-        public ActionResult Detail()
+        public ActionResult Detail(int? id)//nullable var id
         {
-            return View();
+            if (id == null)
+            {
+                return HttpNotFound();
+            }
+            var boardGame = _boardGameRepository.GetBoardGame((int)id);
+            return View(boardGame);
         }
     }
 }
