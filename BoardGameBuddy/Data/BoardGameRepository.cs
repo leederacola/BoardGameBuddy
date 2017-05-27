@@ -71,18 +71,14 @@ namespace BoardGameBuddy.Data
         };  //end array
 
         public BoardGame[] GetBoardGames()
-        //!
-        //!
+        //! returns _boardGames that was created upon construction
+
         {
             return _boardGames;
         }
 
-
-        //-----------------------------------------------------------------------
-
         public BoardGame GetBoardGame(int id)
-        //!
-        //!
+        //! 
         {
             BoardGame boardGameToReturn = null;
 

@@ -1,0 +1,50 @@
+5/27
+What I have so far......
+	***	Views-	Home, Game Libiary, Detail
+	***	Model-	BoardGame
+	***	Controllers- HomeController
+	*** Data- BoardGameRepository
+			game data hard coded in repository
+	*** This txt file
+
+My understanding/explaination of the pieces in play.
+
+Home controller handles all incomming request. 
+
+Constructor() upon creation this creates a new BoardGameRepository
+
+Action Methods- they do things
+	ActionResult Index() - returns the Index View, located in Views/Home/Index
+	ViewResult GameLibrary() - 
+			creates var boardGames = from gameRepo.GetGames()
+			var boardGames no has all boardgame
+			boardgames is passed to  game library view.
+			Game Library view loops each element in var bardGames and displays Title
+
+	ActionResult Detail(int? id) - 
+			-careats a var called BoardGame, calls GetBoardGame, passes piticular
+			BoardGame to the Detail View creating dynamic Detail View based upon game link clicked?
+
+Data - Repository
+	
+	Methods -
+	Constructor - creates an array of BoardGame objects, hard coded.
+		
+		public BoardGame[] GetBoardGames()
+				this returns _boardGames that was created upon construction.  
+				
+		public BoardGame GetBoardGame(int id)
+				this
+			
+		
+		Home controller constructs null _gameRepository ----> gameRepository constructor adds hard coded data into an array called _boardGames.
+
+Model- BoardGame
+	string GetTitle() - not actually useful now. redundent.
+
+
+
+
+As of now Index.cshtml is our home page.
+
+		
