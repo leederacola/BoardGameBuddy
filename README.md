@@ -1,4 +1,14 @@
 # BoardGameBuddy
+!!!!!!!!    Current State           !!!!!!!!!
+----------------- views -----------------------------
+welcome page with link to Library view (list titles)
+Library Page with links to detail views (shows game attributes)
+navagation between them.
+basic ass html
+------------------Data/Models/Repository---------------------------
+BoardGame Model/class
+Repository that creates an array of hard coded game titles and attributes.
+
 
 Board Game Companion App.
 Phase 1)
