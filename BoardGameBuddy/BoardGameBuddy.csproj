@@ -94,7 +94,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="ComicBookTut\Artist.cs" />
+    <Compile Include="ComicBookTut\ComicBook.cs" />
+    <Compile Include="ComicBookTut\ComicBookRepository.cs" />
+    <Compile Include="ComicBookTut\ComicBooksController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Data\BoardGameRepository.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -105,6 +110,9 @@
     <Content Include="Views\web.config" />
     <Content Include="packages.config" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\GameLibrary.cshtml" />
+    <Content Include="ComicBookTut\Detail.cshtml" />
+    <Content Include="ComicBookTut\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
