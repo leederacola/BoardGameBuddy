@@ -10,23 +10,28 @@ Final Product Discription - Basic Functions
 -	(search for Title, pull data from BGG, store in database on server) check legallity???
 
 More Features outside Collection Management/Query(Find a Game To Play)/Sorting
-	-Score Tracker.  
-		-GUI score tracker, add player names, calculate score (we make a calculator?)
-		-Less likely - Make Game specific score trackers - Visual Themes or simply more tailored caluclation method. Or modular trackers?
-	-Game Play Logs
-		-Who always wins at Murder Kings? Check the game specific Play Logs.
-		-Current Champion - Math out individual play counts, wins, losses, etc. determine a Champion
-		-Save Play Names and Play Logs.
-		-Score Tracker will Upload info to Play Logs automatically!
-	-Game Notes (list important notes you have for playing)
-		-House Rules
-		-Contested Rules
-		-Stupid shit you forget when playing
-		-Quick Start Guide
-	-First Player Randomizer
-	-Dice (for rolling) why not?
-	-Save RuleBook PDF to device for quick access (for other players to look at and ctrl F is great for searching rule books)
-		-storing PDFs for all games is probably a lot of space
+
+Score Tracker
+* GUI score tracker, add player names, calculate score (we make a calculator?)
+* Less likely - Make Game specific score trackers - Visual Themes or simply more tailored caluclation method. Or modular trackers
+
+Game Play Logs
+* Who won last time we played Murder Kings? Check the game specific Play Logs.
+* Current Champion - Math out individual play counts, wins, losses, etc. to crown a reigning Champion
+* Save Player Names and Play Logs.  
+* View Player specific logs.
+* ***The Score Tracker will Upload info to Play Logs automatically***
+*Game Notes (list important notes you have for playing)
+* Contested Rules / Rule Reminders / House Rules
+* Quick Start Guide (play phases, action orders etc.
+Other Features that Could be Implemented
+* First Player Randomizer
+* Dice (for rolling) why not?
+* House Glass / Timer
+* Save RuleBook PDF to device for quick access (for other players to look at and ctrl F is great for searching rule books)
+
+
+Theres a lot of features that could be implemented that are at least related or useful when playing a board game that could be added for learning purposes.  These all might not be super useful but still be good to make them?
 	
 !!!!!!!!current state!!!!!!!!!
 
