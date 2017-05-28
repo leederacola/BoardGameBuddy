@@ -31,6 +31,14 @@ Other Features that Could be Implemented
 * House Glass / Timers
 * Save RuleBook PDF to device for quick access (for other players to look at and ctrl F is great for searching rule books)
 
+Less Likely Grandiose Networked Features (have even little idea of how this would work, or time and skill involved)
+* Friends, Add Friends. See Freinds Library, Player Stats
+* Query by game attributes from your collection and any combination of your networked friends.
+* Persistant Player Stat Tracking and comparasion.  Algorithim to determine player ranking in game based on uploaded and shared player data. My plays with my wife(scoring? win/loss record?) count to same Friends ranking as any combination of friends. View Local or Friends Stats.  
+* From single device, "Login" local players(who have an account) for Play Logs and Stat.  Data from single devide will update other players accounts.
+* Import entire BGG collection to BGB.
+* Push/Pull BGB collection updates to BGG  vice versa
+
 Theres a lot of features that could be implemented that are at least related or useful when playing a board game that could be added for learning purposes.  These all might not be super useful but still be good to make them?
 	
 !!!!!!!!current state!!!!!!!!!
