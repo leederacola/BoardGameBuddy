@@ -11,8 +11,8 @@ namespace BoardGameBuddy.Data
 {
     public class BoardGameRepository
     {
-        
-        private static BoardGame[] _boardGames = new BoardGame[]
+
+        public List<BoardGame> boardGames = new List<BoardGame>()
         {
             new BoardGame()
             {
@@ -69,31 +69,14 @@ namespace BoardGameBuddy.Data
                 MyRating = 8,
                 GeekRating = 7.9,
             }
-        };  //end array
+        };  //end List
 
-        public BoardGame[] GetBoardGames()
+        public List<BoardGame> GetBoardGames()
         //! returns _boardGames that was created upon construction
-
         {
-            return _boardGames;
+            return boardGames;
         }
 
-        public BoardGame GetBoardGame(int id)
-        //! 
-        {
-            BoardGame boardGameToReturn = null;
-
-            foreach (var boardGame in _boardGames)
-            {
-                if (boardGame.Id == id)
-                {
-                    boardGameToReturn = boardGame;
-                    break;
-                }
-            }
-
-            return boardGameToReturn;
-        }
 
 
     }

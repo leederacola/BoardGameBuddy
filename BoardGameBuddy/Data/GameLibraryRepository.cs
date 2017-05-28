@@ -7,23 +7,52 @@ using System.Web;
 
 namespace BoardGameBuddy.Data
 {
-   
-    //void addGame(int Id) -  Adds game to List from using BoardGame.Id (easiest way for now, no need to fuck with string searches just yet)
-    //void removeGame(int Id) - removes desired BoardGame from List
-    //void clearLibrary() - removes all BoardGame objects from arrayList
-
     public class GameLibraryRepository
     {
-        //! Constructor: create empty ArrayList
-        //private static ArrayList _GameLibrary = new ArrayList(new BoardGame[] { });
+        public static List<BoardGame> GameLibrary;//! Users Library
+        public BoardGameRepository _gamesToAddFrom;//! Creates new B.G.R.
+        public List<BoardGame> availableGames;//! Holds contents of _gamesToAddFrom.boardGames
 
-        //! Constructor v2: Adds all BoardGames in BoardgameRepository
-        private static List<BoardGame> _GameLibrary = new List<BoardGame>()
+        //! construictor
+        public GameLibraryRepository()
         {
-            //empty
-        };
-     
+            GameLibrary = new List<BoardGame>();
+            _gamesToAddFrom = new BoardGameRepository();
+            availableGames = _gamesToAddFrom.GetBoardGames();
+        }//endConstructor
+
+
+        public void addAll()
+        //! Adds every BoardGame in availableGames to GameLibrary
+        {
+            foreach (BoardGame game in availableGames)
+            {
+                GameLibrary.Add(game);
+            }
+        }//end AddAll
+
+
+       
+        public BoardGame GetBoardGame(int id)
+        //! retrivies each game in List for View Purposes 
+        {
+            BoardGame boardGameToReturn = null;
+
+            foreach (var boardGame in availableGames)
+            {
+                if (boardGame.Id == id)
+                {
+                    boardGameToReturn = boardGame;
+                    break;
+                }
+            }
+
+            return boardGameToReturn;
+        }
+
 
 
     }
-}
+
+
+

@@ -11,13 +11,12 @@ namespace BoardGameBuddy.Controllers
 {
     public class HomeController : Controller
     {
-        //! field - BoardGameRepository
-        private BoardGameRepository _boardGameRepository = null;
+        public BoardGameRepository _GameLibraryRepository = null;
 
-       public HomeController ()
+        public HomeController ()
        //! constructor - created ionstance of BoardGameRepository
         {
-            _boardGameRepository = new BoardGameRepository();
+            _GameLibraryRepository = new BoardGameRepository();
         }
       
 
@@ -38,7 +37,7 @@ namespace BoardGameBuddy.Controllers
         //! returns view Home/GameLibiary
         //! Action Linker located in Index view
         {
-            var boardGames = _boardGameRepository.GetBoardGames();
+            var boardGames = GameLibraryRepository.ge
             return View(boardGames);
         }
 
