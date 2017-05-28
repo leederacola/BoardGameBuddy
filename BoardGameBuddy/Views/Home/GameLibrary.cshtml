@@ -1,5 +1,8 @@
 ﻿@model BoardGameBuddy.Models.BoardGame
 
+@{ 
+   ViewBag
+}
 
 
 <!DOCTYPE html>
@@ -10,11 +13,17 @@
     <title>GameLibrary</title>
 </head>
 <h1>My Board Game Library</h1>
-
-<body>
-   
-        
-   <h5>@Html.ActionLink("Return Home", "Index")</h5>
+<body>  
+ 
+   @foreach (var item in Model.
+      
+   {
+    <div class="col-md-3">
+        <h4>
+            @Html.ActionLink(Model.Title, "Detail", new { id = Model.Id })
+        </h4>
     </div>
+   }
+    <h5>@Html.ActionLink("Return Home", "Index")</h5>    
 </body>
 </html>

@@ -8,14 +8,15 @@ namespace BoardGameBuddy.Models
 {
     public class UserLibrary
     {
-        public static List<BoardGame> GameLibrary;//! Users Library
+        public List<BoardGame> GameLibrary;//! Users Library
+        //public GameLibrary gameLibrary;
         public BoardGameRepository _gamesToAddFrom;//! Creates new B.G.R.
         public List<BoardGame> availableGames;//! Holds contents of _gamesToAddFrom.boardGames
 
         //! construictor
         public UserLibrary()
         {
-            GameLibrary = new List<BoardGame>();
+            GameLibrary = new GameLibrary();
             _gamesToAddFrom = new BoardGameRepository();
             availableGames = _gamesToAddFrom.GetBoardGames();
         }//endConstructor
