@@ -1,4 +1,5 @@
-﻿@model BoardGameBuddy.Models.BoardGame[]
+﻿@model BoardGameBuddy.Models.BoardGame
+
 
 
 <!DOCTYPE html>
@@ -11,12 +12,7 @@
 <h1>My Board Game Library</h1>
 
 <body>
-    <div>
-        @foreach (var boardGame in Model)
-        {
-            <h3>@Html.ActionLink(boardGame.Title, "Detail",
-        new { id = boardGame.Id }) </h3>
-        }
+   
         
    <h5>@Html.ActionLink("Return Home", "Index")</h5>
     </div>

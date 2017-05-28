@@ -11,12 +11,12 @@ namespace BoardGameBuddy.Controllers
 {
     public class HomeController : Controller
     {
-        public BoardGameRepository _GameLibraryRepository = null;
+        public GameLibraryRepository _GameLibraryRepository = null;
 
         public HomeController ()
        //! constructor - created ionstance of BoardGameRepository
         {
-            _GameLibraryRepository = new BoardGameRepository();
+            _GameLibraryRepository = new GameLibraryRepository();
         }
       
 
@@ -37,7 +37,8 @@ namespace BoardGameBuddy.Controllers
         //! returns view Home/GameLibiary
         //! Action Linker located in Index view
         {
-            var boardGames = GameLibraryRepository.ge
+            _GameLibraryRepository.addAll();
+            var boardGames = _GameLibraryRepository.GetBoardGames();
             return View(boardGames);
         }
 
@@ -47,7 +48,7 @@ namespace BoardGameBuddy.Controllers
             {
                 return HttpNotFound();
             }
-            var boardGame = _boardGameRepository.GetBoardGame((int)id);
+            var boardGame = _GameLibraryRepository.GetBoardGame((int)id);
             return View(boardGame);
         }
     }

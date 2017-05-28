@@ -1,20 +1,19 @@
-﻿using BoardGameBuddy.Models;
+﻿using BoardGameBuddy.Data;
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace BoardGameBuddy.Data
+namespace BoardGameBuddy.Models
 {
-    public class GameLibraryRepository
+    public class UserLibrary
     {
         public static List<BoardGame> GameLibrary;//! Users Library
         public BoardGameRepository _gamesToAddFrom;//! Creates new B.G.R.
         public List<BoardGame> availableGames;//! Holds contents of _gamesToAddFrom.boardGames
 
         //! construictor
-        public GameLibraryRepository()
+        public UserLibrary()
         {
             GameLibrary = new List<BoardGame>();
             _gamesToAddFrom = new BoardGameRepository();
@@ -55,6 +54,3 @@ namespace BoardGameBuddy.Data
         }
     }
 }
-
-
-
