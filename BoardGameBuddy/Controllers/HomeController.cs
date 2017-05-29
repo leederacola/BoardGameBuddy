@@ -42,7 +42,17 @@ namespace BoardGameBuddy.Controllers
 
         public ViewResult GameLibrary()
         {
-            gameLibrary.addAll(boardGameRepository.GetBoardGames());
+            //addAll()
+            //gameLibrary.addAll(boardGameRepository.GetBoardGames());
+            //clearGames()
+            //gameLibrary.clearGames();
+            //addId
+            gameLibrary.addIndex(boardGameRepository.GetBoardGames(), 1);
+            gameLibrary.addIndex(boardGameRepository.GetBoardGames(), 4);
+            gameLibrary.addIndex(boardGameRepository.GetBoardGames(), 3);
+            gameLibrary.removeAt(1);
+
+
             var library = gameLibrary.GetBoardGames();
             return View(library);
         }

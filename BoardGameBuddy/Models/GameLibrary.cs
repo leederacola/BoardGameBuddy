@@ -16,8 +16,6 @@ namespace BoardGameBuddy.Models
 
 
         public List<BoardGame> GetBoardGames()
-        //! returns the gameLibrary created upon construction
-        //! Used for passing to views
         {
             return gameLibrary;
         }//End GetBoardGames
@@ -38,22 +36,43 @@ namespace BoardGameBuddy.Models
             return gameToReturn;
         }//End GetBoardGame
 
+
+
+
         public void addAll(List<BoardGame> repo)
-        //! Adds every BoardGame in availableGames to GameLibrary
+        //! Adds every BoardGame in BoardGamerepository to GameLibrary
         {
             foreach (BoardGame game in repo)
             {
                 gameLibrary.Add(game);
             }
-        }//end AddAll
+        }
 
-        //public void addAll(List<BoardGame> allGames)
-        //{
-        //    for (int i = 0; i < allGames.Count; i++)
-        //    {
-        //      gameLibrary = allGames;
-        //    }
-        //}
+        
+        public void clearGames()
+        //! Removes all games from Library
+        {
+            gameLibrary.Clear();
+        }
+
+        public void addIndex(List<BoardGame> fromRepository, int index)
+        //! Actually adds based on index of fromRepository(cheat for now) 
+        //! adds BoardGame to gameLibrary using BoardGame.Id (as of now Id == (Index-1)
+        //! not actually searching for Id:(
+        {
+            BoardGame newGame = new BoardGame();
+            newGame = fromRepository[index];
+            gameLibrary.Add(newGame);     
+        }
+
+        public void removeAt(int index)
+        //! just overloading Class.List Method....pretty sure this is redundant.
+        //! removes BoardGame from gameLibrary by index
+        //! not actually searching for Id:(
+        {   
+            gameLibrary.RemoveAt(index);
+        }
+
 
     }
 }
