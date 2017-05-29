@@ -34,13 +34,15 @@ namespace BoardGameBuddy.Controllers
         }
 
         
-         public ViewResult GameLibrary()
+         public ViewResult GameRepository()
         //! returns view Home/GameLibiary
         //! Action Linker located in Index view
         {
             var gameList = boardGameRepository.GetBoardGames();
             return View(gameList);
         }
+
+
 
         public ActionResult Detail(int? id)//nullable var id
         {
