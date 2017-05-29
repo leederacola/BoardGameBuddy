@@ -50,7 +50,7 @@ namespace BoardGameBuddy.Controllers
             {
                 return HttpNotFound();
             }
-            var boardGame = gameLibrary.GetBoardGame((int)id);
+            var boardGame = boardGameRepository.GetBoardGame((int)id);
             return View(boardGame);
         }
     }
