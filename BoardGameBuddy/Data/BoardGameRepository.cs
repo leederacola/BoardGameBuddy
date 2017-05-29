@@ -4,15 +4,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-
-
+/**
+ * As of Now BoardGameRepository is a List<> of BoardGame objects.
+ * 
+ **/
 
 namespace BoardGameBuddy.Data
 {
     public class BoardGameRepository
     {
-
-        public List<BoardGame> boardGames = new List<BoardGame>()
+        public List<BoardGame> gameRepository = new List<BoardGame>()
         {
             new BoardGame()
             {
@@ -71,13 +72,31 @@ namespace BoardGameBuddy.Data
             }
         };  //end List
 
+        
         public List<BoardGame> GetBoardGames()
-        //! returns _boardGames that was created upon construction
+        //! returns the gameRepository created upon BoardGameRepository construction
+        //! FOR USE IN LIBRARY VIEW
         {
-            return boardGames;
-        }
+            return gameRepository;
+        }//End GetBoardGames
 
 
+        public BoardGame GetBoardGame(int id)
+        {
+            BoardGame gameToReturn = null;
+
+            foreach (var game in gameRepository)
+            {
+                if (game.Id == id)
+                {
+                    gameToReturn = game;
+                    break;
+                }
+            }
+            return gameToReturn;
+        }//End GetBoardGame
 
     }
 }
+
+
