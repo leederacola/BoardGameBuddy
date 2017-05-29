@@ -1,0 +1,22 @@
+﻿@model IList<BoardGameBuddy.Models.BoardGame>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>GameRepository</title>
+</head>
+<body>
+    <h1>The Board Game Repository</h1>
+    @for (int i = 0; i < Model.Count; i++)
+    {
+        <div class="col-md-3">
+            <h4>
+                @Html.ActionLink(Model[i].Title, "Detail", new { id = Model[i].Id })
+            </h4>
+        </div>
+    }
+    <h5>@Html.ActionLink("Return Home", "Index")</h5>
+</body>
+</html>

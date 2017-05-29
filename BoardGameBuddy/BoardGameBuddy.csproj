@@ -114,7 +114,7 @@
     <Content Include="Views\web.config" />
     <Content Include="packages.config" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\GamerRepository.cshtml" />
+    <Content Include="Views\Home\GameRepository.cshtml" />
     <Content Include="ComicBookTut\Detail.cshtml" />
     <Content Include="ComicBookTut\Index.cshtml" />
     <Content Include="Views\Home\Detail.cshtml" />

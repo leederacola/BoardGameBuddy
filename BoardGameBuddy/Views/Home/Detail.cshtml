@@ -2,9 +2,7 @@
     
 
 @{
-    // (above) @model imports BoardGame Model
-    ViewBag.Title = Model.Title;
-    //creates a dynamic viewBag, passes model.Title to it for use in HTML
+
 }
 
 <!DOCTYPE html>
@@ -14,8 +12,9 @@
     <meta name="viewport" content="width=device-width" />
     <title></title>
 </head>
-    <h1>@Model.Title</h1>
+    
         <body>
+            <h1>@Model.Title</h1>
             <div>
                 <h3>Game Title: @Model.Title</h3>
                 <h3>Player Count: @(Model.PlayerCountMin) -  @(Model.PlayerCountMax)</h3>
