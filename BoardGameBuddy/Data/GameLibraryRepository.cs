@@ -22,14 +22,7 @@ namespace BoardGameBuddy.Data
         }//endConstructor
 
 
-        public void addAll()
-        //! Adds every BoardGame in availableGames to GameLibrary
-        {
-            foreach (BoardGame game in availableGames)
-            {
-                GameLibrary.Add(game);
-            }
-        }//end AddAll
+     
 
         public List<BoardGame> GetBoardGames()
         //! returns _boardGames that was created upon construction

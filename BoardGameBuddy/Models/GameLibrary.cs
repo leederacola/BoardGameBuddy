@@ -38,14 +38,22 @@ namespace BoardGameBuddy.Models
             return gameToReturn;
         }//End GetBoardGame
 
-
-        public void addAll(List<BoardGame> allGames)
+        public void addAll(List<BoardGame> repo)
+        //! Adds every BoardGame in availableGames to GameLibrary
         {
-            for (int i = 0; i < allGames.Count; i++)
+            foreach (BoardGame game in repo)
             {
-              gameLibrary = allGames;
+                gameLibrary.Add(game);
             }
-        }
+        }//end AddAll
+
+        //public void addAll(List<BoardGame> allGames)
+        //{
+        //    for (int i = 0; i < allGames.Count; i++)
+        //    {
+        //      gameLibrary = allGames;
+        //    }
+        //}
 
     }
 }

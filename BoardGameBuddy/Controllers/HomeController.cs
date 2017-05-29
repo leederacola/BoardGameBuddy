@@ -16,17 +16,15 @@ namespace BoardGameBuddy.Controllers
         public GameLibrary gameLibrary = null; 
 
         public HomeController ()
-       //! constructor 
         {
             boardGameRepository = new BoardGameRepository();
             gameLibrary = new GameLibrary();  
         }
       
 
-        
-        public ActionResult Index()
-        //! Somehow this is the default Home/Index view returened.
-        //! I believe its due to naming conventions   
+/** Start Methods **/  
+     
+        public ActionResult Index()   
         {
             int hour = DateTime.Now.Hour;
             ViewBag.Greeting = hour < 12 ? "Good Morning" : "Good Afternoon";
@@ -42,6 +40,12 @@ namespace BoardGameBuddy.Controllers
             return View(gameList);
         }
 
+        public ViewResult GameLibrary()
+        {
+            gameLibrary.addAll(boardGameRepository.GetBoardGames());
+            var library = gameLibrary.GetBoardGames();
+            return View(library);
+        }
 
 
         public ActionResult Detail(int? id)//nullable var id

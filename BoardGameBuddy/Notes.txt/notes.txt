@@ -1,3 +1,9 @@
+5/28
+Changes Made
+	All BoardGame objects are help in a List<BoardGames> called BoardGameRepository
+	Model called GameLibrary is a another List<BoardGames> this is what the user(s) will add to. 
+	Need to add methods to GameLibrary...AddAll(), Add(Id), remove(Id), clear()
+
 Changes to be implemented.
 
 BoardGameRepository currently holds both BoardGame objects and creates the array they are contained in.  

@@ -119,6 +119,7 @@
     <Content Include="ComicBookTut\Index.cshtml" />
     <Content Include="Views\Home\Detail.cshtml" />
     <Content Include="ComicBookTut\_Layout.cshtml" />
+    <Content Include="Views\Home\GameLibrary.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
