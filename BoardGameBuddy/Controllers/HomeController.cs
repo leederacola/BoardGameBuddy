@@ -46,12 +46,14 @@ namespace BoardGameBuddy.Controllers
             //gameLibrary.addAll(boardGameRepository.GetBoardGames());
             //clearGames()
             //gameLibrary.clearGames();
-            //addId
+            //addIndex(int)
             gameLibrary.addIndex(boardGameRepository.GetBoardGames(), 1);
             gameLibrary.addIndex(boardGameRepository.GetBoardGames(), 4);
             gameLibrary.addIndex(boardGameRepository.GetBoardGames(), 3);
-            gameLibrary.removeAt(1);
-
+            //removeAt
+            //gameLibrary.removeAt(1);
+            //clearGames()
+            //gameLibrary.clearGames();
 
             var library = gameLibrary.GetBoardGames();
             return View(library);
